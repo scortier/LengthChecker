@@ -1,13 +1,10 @@
 package com.example;
+import java.math.BigDecimal;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+
+public class LengthChecker{
+    public BigDecimal twoPointDiffCalculator(BigDecimal coordinate1,BigDecimal coordinate2){
+        BigDecimal diffBetweenPoints = coordinate1.subtract(coordinate2).abs();
+        return diffBetweenPoints;
     }
 }
